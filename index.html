@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andre Specht">
+    <title>Landing page | Andre Specht</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+    <link href="assets/style/index.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/script/index.js" defer></script>
+    <script src="assets/script/validation.js" defer></script>
+  </head>
+
+  <body>
+    <div id="landing-page">
+      <div class="container">
+        <div class="twelve column">
+          <header>
+            <div id="logo-align">
+              <img id="logo" src="assets/img/logo.png">
+            </div>
+            <nav>
+              <ul>
+                <li id="contact" title="Get in touch">Get in touch</li>
+              </ul>
+            </nav>
+          </header>
+          <div id="banner">
+            <section>
+              <div class="intro">
+                Hello, world. I'm <h1>Andre Specht</h1>, a full-stack<br>
+                developer and IT instructor based in Winnipeg
+              </div>
+              <span class="more">More</span>
+            </section>
+          </div>
+          <div id="social">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/drespecht/" target="_blank" class="linkedin" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/andrespecht" target="_blank" class="dribbble" title="Dribbble">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/andrespecht/" target="_blank" class="twitter" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/drespecht/" target="_blank" class="instagram" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Contact form                                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div id="contact-frame">
+      <div id="contact-align">
+        <div id="contact-title">
+          <p>Get in touch</p>
+        </div>
+        <form id="contact-form" method="post">
+          <input type="hidden" name="token" value="<?= attr(getToken()); ?>">
+          <input type="text" name="name" id="name" placeholder="Name" maxlength="50" required
+            title="Name is required" pattern="^[^-\s][a-zA-Z\u00C0-\u00ff\s'-]+$">
+          <input type="email" name="email" id="email" placeholder="Email" maxlength="50" required
+            title="Email is required" pattern="^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
+          <textarea name="message" id="message" placeholder="Message" maxlength="2000" required
+            title="Message is required"></textarea>
+          <input type="button" id="contact-btn" value="Send">
+        </form>
+        <div class="copyright">
+          <p>andrespecht.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="alert">
+      <span id="alert-message"></span>
+    </div>
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,612 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*   Landing page                                        */
+/*   Andre Specht                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Imports                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@import 'base.css';
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Landing page                                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#landing-page {
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  font-size: 100%;
+  background-attachment: scroll;
+  background-image: linear-gradient(45deg, rgba(20, 158, 136, .96) 0%, rgba(25, 22, 84, .96) 100%), url('../img/blocks.gif?v=2');
+  background-position: 0% 0%, center;
+  background-repeat: repeat, repeat;
+  background-size: cover, 50rem;
+  background-color: #22242a;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  width: 100%;
+  overflow: hidden;
+}
+
+#logo-align {
+  float: left;
+  width: 20%;
+  height: 7rem;
+}
+
+#logo, #login {
+  position: relative;
+  top: 2.1rem;
+  right: .2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+#login {
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  height: 7rem;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  line-height: 7.3rem;
+}
+
+nav ul li {
+  display: inline;
+  padding: 1.1rem 1.5rem 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, .15);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: .01rem .01rem #000;
+  border: .1rem solid rgba(255, 255, 255, .05);
+  border-radius: .4rem;
+  letter-spacing: 0rem;
+  cursor: pointer;
+}
+
+li.dashboard {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+nav ul li a {
+  display: inline;
+  padding: 1.1rem 1.5rem 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, .15);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: .01rem .01rem #000;
+  border: .1rem solid rgba(255, 255, 255, .05);
+  border-radius: .4rem;
+  letter-spacing: 0rem;
+  cursor: pointer;
+}
+
+nav ul li + li {
+  margin-left: 2rem;
+}
+
+nav ul li:hover {
+  border: .1rem solid rgba(255, 255, 255, .25);
+}
+
+li.dashboard:hover {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+nav ul li a:hover {
+  border: .1rem solid rgba(255, 255, 255, .25);
+}
+
+nav ul li:active, nav ul li a:active,
+nav ul li:visited, nav ul li a:visited {
+  color: #fff;
+  border: .1rem solid rgba(255, 255, 255, .05);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Banners                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 14rem);
+  height: calc(var(--vh, 1vh) * 100 - 14rem);
+  text-align: left;
+}
+
+.intro-1, .intro-2, .intro-3 {
+  display: none;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-54%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+section.isvisible {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.intro {
+  margin-top: -1rem;
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+  line-height: 1.4;
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: .01rem .01rem #000;
+}
+
+.intro h1 {
+  display: inline;
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.more {
+  display: inline-block;
+  margin-top: 3rem;
+  width: 16rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  background-color: #2489f1;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.more.isvisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.more:hover {
+  background-color: #3693f2;
+}
+
+section {
+  transition: all .5s ease-in;
+}
+
+.more {
+  transition: all .3s ease-in, background-color .2s ease-in-out;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Social nav                                           */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#social {
+  width: 100%;
+  height: 7rem;
+  text-align: left;
+  overflow: hidden;
+}
+
+#social ul {
+  margin-top: 0rem;
+  list-style: none;
+  text-align: center;
+}
+
+#social ul li {
+  display: inline-block;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+#social ul li + li {
+  margin-left: 2rem;
+}
+
+#social ul li a {
+  display: inline-block;
+  position: relative;
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: .01rem .01rem #000;
+  background-color: rgba(255, 255, 255, .15);
+  border: .1rem solid rgba(255, 255, 255, .05);
+  border-radius: 5rem;
+}
+
+#social ul li a i {
+  font-size: 2rem;
+}
+
+#social ul li a i.fa-linkedin {
+  line-height: 4.15rem;
+}
+
+#social ul li a i.fa-dribbble {
+  line-height: 4.15rem;
+}
+
+#social ul li a i.fa-twitter {
+  line-height: 4.3rem;
+}
+
+#social ul li a i.fa-instagram {
+  line-height: 4.2rem;
+}
+
+#social ul li a:hover {
+  border: .1rem solid rgba(255, 255, 255, .25);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Contact form                                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#contact-frame {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 34rem;
+  padding: 0 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  cursor: default;
+  overflow: hidden;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(-50%, -52%);
+     -moz-transform: translate(-50%, -52%);
+         transform: translate(-50%, -52%);
+}
+
+#contact-frame.isvisible {
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#contact-title {
+  width: 100%;
+  height: 9.3rem;
+  font-size: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#contact-title p {
+  line-height: 9.5rem;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -.04rem;
+}
+
+.copyright {
+  height: 6.3rem;
+  text-align: center;
+}
+
+.copyright p {
+  line-height: 6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #808590;
+  letter-spacing: -.01rem;
+}
+
+#contact-form {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+#name, #email {
+  width: 100%;
+  height: 4.8rem;
+  padding: 0 3rem 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  background-color: #f3f5f7;
+  border: 0rem solid #ccc;
+  border-radius: .4rem;
+  transition: none;
+}
+
+#message {
+  width: 100%;
+  min-width: 100%;
+  height: 14.4rem;
+  padding: 1rem 3rem 1.2rem 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  background-color: #f3f5f7;
+  border: 0rem solid #ccc;
+  border-radius: .4rem;
+  resize: none;
+  overflow: auto;
+  transition: none;
+}
+
+#contact-btn {
+  margin-top: 3rem;
+  width: 100%;
+  height: 4.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0rem;
+  background-color: #2489f1;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+#contact-btn:hover {
+  background-color: #3693f2;
+}
+
+#contact-form input:valid, #contact-form textarea:valid {
+  background: #f2f4f7 url(../img/ok.png) no-repeat 96% center;
+  background-size: 1rem 1rem;
+  outline: none;
+}
+
+#email, #subject, #message {
+  margin-top: 1rem;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #808590;
+  opacity: 1;
+}
+
+::-moz-placeholder, :-moz-placeholder {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #808590;
+  opacity: 1;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*   Overlay                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 5555;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(16, 18, 20, .55);
+  cursor: pointer
+}
+
+#overlay.isvisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#contact-frame, #login-frame, #overlay, #fail {
+  transition: all .2s ease-in-out;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Alert                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#alert {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 6.9rem;
+  background-color: rgba(16, 18, 20, .55);
+  text-align: center;
+  cursor: default;
+  z-index: 9999;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#alert-message {
+  position: relative;
+  line-height: 6.9rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#alert-message::before {
+  content: 'Your message has been sent successfully';
+}
+
+#alert.isvisible {
+  visibility: visible;
+  -webkit-animation: alert 4s ease-in-out 1.5s 1;
+     -moz-animation: alert 4s ease-in-out 1.5s 1;
+          animation: alert 4s ease-in-out 1.5s 1;
+}
+
+@-webkit-keyframes alert {
+  0%, 100% { -webkit-transform: translateY(-100%); opacity: 0; }
+  5%, 95% {opacity: 1}
+  12%, 50%, 88% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes alert {
+  0%, 100% { -moz-transform: translateY(-100%); opacity: 0; }
+  5%, 95% {opacity: 1}
+  12%, 50%, 88% { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes alert {
+  0%, 100% { transform: translateY(-100%); opacity: 0; }
+  5%, 95% {opacity: 1}
+  12%, 50%, 88% { transform: translateY(0); opacity: 1; }
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Fail                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#fail {
+  position: fixed;
+  right: 3.5rem;
+  bottom: 3.3rem;
+  z-index: 9999;
+}
+
+#fail p i {
+  font-size: 1.9rem;
+  color: #f34a49;
+  -webkit-animation: blink 1.4s infinite;
+     -moz-animation: blink 1.4s infinite;
+          animation: blink 1.4s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%, 100% { opacity: 1}
+  50% { opacity: 0}
+}
+
+@-moz-keyframes blink {
+  0%, 100% { opacity: 1}
+  50% { opacity: 0}
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1}
+  50% { opacity: 0}
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Extras                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+li, a, i, img, span, input, #overlay {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Grid                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (max-width: 479px) {
+  .container { width: 90%; }
+  .intro { padding: 0 5%; }
+
+  #social ul li a i { font-size: 2.2rem; }
+
+  #login-frame, #contact-frame {
+    width: 90%;
+    padding: 0 2rem;
+  }
+
+  #email, #subject, #message, #password  { margin-top: .8rem; }
+
+  .intro, .intro h1 { font-size: 3rem; }
+  .more { margin-top: 3.2rem; }
+  #alert-message::before { content: 'Message sent successfully'; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .container { width: 90%; }
+  #social ul li a i { font-size: 2.1rem; }
+  .intro, .intro h1 { font-size: 2.8rem; }
+  .more { margin-top: 3.2rem; }
+}
+
+@media screen and (min-width: 640px) and (max-width: 799px) {
+  .container { width: 90%; }
+  #social ul li a i { font-size: 2.1rem; }
+}
+
+@media screen and (min-width: 800px)  and (max-width: 1439px){
+  .container { width: 90%; }
+  .column { margin-left: 3%; }
+  .column:first-child { margin-left: 0; }
+  .twelve.column { width: 100%; margin-left: 0; }
+}
+
+@media screen and (min-width: 1440px) {
+  .intro, .intro h1 { font-size: 3.4rem; }
+}
