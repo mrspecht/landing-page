@@ -2,7 +2,7 @@
 
 A modern landing page with a modal and an animated background.
 
-Click [here](https://mrspecht.github.io/landing-page/) to open the page.
+[Live demo](https://mrspecht.github.io/landing-page/)
 
 <br />
 
