@@ -4,6 +4,6 @@
 
 ## Landing page
 
-A modern landing page with a modal and an animated backgound.
+A modern landing page with a modal and an animated background.
 
 Click [here](https://mrspecht.github.io/landing-page/) to open the page.
