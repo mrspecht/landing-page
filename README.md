@@ -1,6 +1,6 @@
 ## Landing page
 
-A modern landing page with a modal and an animated background.
+A modern landing page with a 'get in touch' modal.
 
 [Live demo](https://mrspecht.github.io/landing-page/)
 
