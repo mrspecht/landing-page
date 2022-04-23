@@ -22,21 +22,8 @@ input, textarea {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.full-container {
-  position: relative;
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.column {
-  float: left;
-  width: 100%;
+  width: min(100% - 30px, 1280px);
+  margin-inline: auto;
 }
 
 .full-container::after, .container::after, .column::after {
