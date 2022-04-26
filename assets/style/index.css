@@ -576,8 +576,7 @@ li, a, i, img, span, input, #overlay {
   #social ul li a i { font-size: 2.2rem; }
 
   #login-frame, #contact-frame {
-    width: 90%;
-    padding: 0 2rem;
+    width: 80%;
   }
 
   #email, #subject, #message, #password  { margin-top: .8rem; }
