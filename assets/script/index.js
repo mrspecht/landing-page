@@ -23,7 +23,7 @@ sleep(300).then(() => section.classList.add('isvisible'));
 sleep(900).then(() => more.classList.add('isvisible'));
 
 const content = [
-  'Hello, world. I\'m <h1>Andre Specht</h1>, a full-stack<br> developer and IT instructor based in Winnipeg',
+  'Hello, world. I\'m <h1>Andre Specht</h1>, a full-stack<br> developer and instructor based in Winnipeg',
   'I am a passionate developer focused on<br>crafting beautiful and functional websites',
   'My programming skills include JavaScript,<br>TypeScript, React, Java, C#, and Python',
   'Do you want to know more? Get in touch<br>I look forward to hearing from you'
