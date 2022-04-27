@@ -25,9 +25,9 @@ sleep(900).then(() => more.classList.add('isvisible'));
 
 const content = [
   'Hello, world. I\'m <h1>Andre Specht</h1>, a full-stack<br> developer and instructor based in Winnipeg',
-  'I am a passionate developer focused on<br>crafting beautiful and functional websites',
-  'My programming skills include JavaScript,<br>TypeScript, React, Java, C#, and Python',
-  'Do you want to know more? Get in touch<br>I look forward to hearing from you'
+  'I\'m a passionate developer focused on <br>crafting beautiful and functional websites',
+  'I also love teaching and helping others to turn <br>ideias into amazing interactive applications',
+  'Do you want to know more? Get in touch. <br>I look forward to hearing from you'
 ];
 
 onEvent(more, 'click', () => {
