@@ -40,7 +40,7 @@ header {
 }
 
 header button {
-  margin-top: 1.8rem;
+  margin-top: 1.7rem;
   padding: 1.1rem 2.2rem 1rem 2.2rem;
   background-color: rgba(255, 255, 255, .15);
   font-size: 1.6rem;
@@ -115,7 +115,7 @@ section.isvisible {
   margin-top: 3rem;
   width: 16rem;
   height: 4.6rem;
-  line-height: 4.6rem;
+  line-height: 4.7rem;
   background-color: #2489f1;
   border-radius: 10rem;
   font-size: 1.5rem;
@@ -167,8 +167,8 @@ section {
 
 #social ul li {
   display: inline-block;
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
   border-radius: 5rem;
   text-align: center;
   overflow: hidden;
@@ -181,8 +181,8 @@ section {
 #social ul li a {
   display: inline-block;
   position: relative;
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
   font-size: 2rem;
   color: #fff;
   text-shadow: .01rem .01rem #000;
@@ -196,19 +196,19 @@ section {
 }
 
 #social ul li a i.fa-linkedin {
-  line-height: 4.15rem;
+  line-height: 4.25rem;
 }
 
 #social ul li a i.fa-dribbble {
-  line-height: 4.15rem;
+  line-height: 4.25rem;
 }
 
 #social ul li a i.fa-twitter {
-  line-height: 4.3rem;
+  line-height: 4.4rem;
 }
 
 #social ul li a i.fa-instagram {
-  line-height: 4.2rem;
+  line-height: 4.3rem;
 }
 
 #social ul li a:hover {
