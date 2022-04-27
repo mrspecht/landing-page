@@ -14,6 +14,7 @@ function sleep(duration) {
   });
 }
 
+const contact = select('.contact');
 const more = select('.more');
 const intro = select('.intro');
 const section = select('section');
@@ -38,27 +39,6 @@ onEvent(more, 'click', () => {
   intro.innerHTML = content[++n];
 });
 
-const contact = select('#contact');
-const modal = select('#contact-frame');
-const overlay = select('#overlay');
-
 onEvent(contact, 'click', () => {
-  modal.classList.add('isvisible');
-  overlay.classList.add('isvisible');
-});
-
-onEvent(overlay, 'click', (event) => {
-  if (event.target.className === 'overlay' || event.target.className === 'isvisible') {
-    modal.classList.remove('isvisible');
-    overlay.classList.remove('isvisible');
-  }
-});
-
-onEvent(document, 'keyup', (event) => {
-  if (event.key === "Escape") {
-    if (modal.classList.contains('isvisible') && overlay.classList.contains('isvisible')) {
-      modal.classList.remove('isvisible');
-      overlay.classList.remove('isvisible');
-    }
-  }
+  window.location.assign('https://andrespecht.com/');
 });

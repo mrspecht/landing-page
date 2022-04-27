@@ -12,22 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/script/index.js" defer></script>
-    <script src="assets/script/validation.js" defer></script>
   </head>
-
   <body>
     <div id="landing-page">
       <div class="container">
         <div class="twelve column">
           <header>
-            <div id="logo-align">
-              <img id="logo" src="assets/img/logo.png">
-            </div>
-            <nav>
-              <ul>
-                <li id="contact" title="Get in touch">Get in touch</li>
-              </ul>
-            </nav>
+            <button class="contact" title="Official website">Go to website</button>
           </header>
           <div id="banner">
             <section>
@@ -64,35 +55,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- Contact form                                        -->
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <div id="contact-frame">
-      <div id="contact-align">
-        <div id="contact-title">
-          <p>Get in touch</p>
-        </div>
-        <form id="contact-form" method="post">
-          <input type="hidden" name="token" value="<?= attr(getToken()); ?>">
-          <input type="text" name="name" id="name" placeholder="Name" maxlength="50" required
-            title="Name is required" pattern="^[^-\s][a-zA-Z\u00C0-\u00ff\s'-]+$">
-          <input type="email" name="email" id="email" placeholder="Email" maxlength="50" required
-            title="Email is required" pattern="^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
-          <textarea name="message" id="message" placeholder="Message" maxlength="2000" required
-            title="Message is required"></textarea>
-          <input type="button" id="contact-btn" value="Send">
-        </form>
-        <div class="copyright">
-          <p>andrespecht.com</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="overlay"></div>
-    <div id="alert">
-      <span id="alert-message"></span>
     </div>
     <script>
       let vh = window.innerHeight * 0.01;

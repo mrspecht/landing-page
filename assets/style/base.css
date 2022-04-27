@@ -49,7 +49,7 @@ li, i, a, span, img {
           user-select: none;
 }
 
-li, a, i, span, input {
+li, a, i, span, input, button {
   text-decoration: none;
   transition: all .2s ease-in-out;
 }
