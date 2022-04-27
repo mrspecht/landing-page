@@ -200,7 +200,8 @@ section {
 }
 
 #social ul li a i.fa-dribbble {
-  line-height: 4.35rem;
+  font-size: 2.1rem;
+  line-height: 4.3rem;
 }
 
 #social ul li a i.fa-twitter {
@@ -208,8 +209,8 @@ section {
 }
 
 #social ul li a i.fa-github {
-  font-size: 2.1rem;
-  line-height: 4.4rem;
+  font-size: 2.2rem;
+  line-height: 4.35rem;
 }
 
 #social ul li a:hover {
