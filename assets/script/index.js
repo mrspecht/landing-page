@@ -26,7 +26,7 @@ sleep(900).then(() => more.classList.add('isvisible'));
 const content = [
   'Hello, world. I\'m <h1>Andre Specht</h1>, a full-stack<br> developer and instructor based in Winnipeg',
   'I\'m a passionate developer focused on <br>crafting beautiful and functional websites',
-  'I also love teaching and helping others to turn <br>ideias into amazing interactive applications',
+  'I also love teaching and helping others to turn <br>ideas into interactive applications',
   'Do you want to know more? Get in touch. <br>Check the links below or visit my website'
 ];
 
