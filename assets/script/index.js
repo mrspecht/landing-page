@@ -31,7 +31,9 @@ const content = [
 ];
 
 onEvent(more, 'click', () => {
-  if (n >= 3) {
+  more.innerText = (n === 2) ? 'again?' : 'more';
+
+  if (n === 3) {
     intro.innerHTML = content[n = 0];
     return;
   }
