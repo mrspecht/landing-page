@@ -114,7 +114,7 @@ section.isvisible {
   width: 16rem;
   height: 4.6rem;
   line-height: 4.7rem;
-  background-color: #2489f1;
+  background-color: #127ff0;
   border-radius: 10rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -133,7 +133,7 @@ section.isvisible {
 }
 
 .more:hover {
-  background-color: #3693f2;
+  background-color: #2489f1;
 }
 
 section {
