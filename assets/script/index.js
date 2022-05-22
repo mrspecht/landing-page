@@ -41,6 +41,6 @@ onEvent(more, 'click', () => {
   intro.innerHTML = content[++n];
 });
 
-onEvent(contact, 'click', () => {
-  window.location.assign('https://andrespecht.com/');
-});
+// onEvent(contact, 'click', () => {
+//   window.location.assign('https://andrespecht.com/');
+// });
