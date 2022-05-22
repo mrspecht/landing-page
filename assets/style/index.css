@@ -20,11 +20,11 @@
   height: calc(var(--vh, 1vh) * 100);
   font-size: 100%;
   background-attachment: scroll;
-  background-image: linear-gradient(45deg, rgba(20, 158, 136, .96) 0%, rgba(25, 22, 84, .96) 100%), url('../img/blocks.gif?v=2');
+  background-image: linear-gradient(150deg, rgb(63 29 153 / .96) 0%, rgb(115 47 202 / .96) 100%), url('../img/blocks.gif?v=2');
   background-position: 0% 0%, center;
   background-repeat: repeat, repeat;
   background-size: cover, 50rem;
-  background-color: #22242a;
+  background-color: #fff;
 }
 
 
@@ -114,7 +114,7 @@ section.isvisible {
   width: 16rem;
   height: 4.6rem;
   line-height: 4.7rem;
-  background-color: #127ff0;
+  background-color: #2489f1;
   border-radius: 10rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -133,7 +133,7 @@ section.isvisible {
 }
 
 .more:hover {
-  background-color: #2489f1;
+  background-color: #127ff0;
 }
 
 section {
