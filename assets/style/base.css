@@ -43,7 +43,7 @@ input, #contact {
           appearance: none;
 }
 
-li, i, a, span, img {
+li, i, a, span, img, button {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
