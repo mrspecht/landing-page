@@ -37,7 +37,7 @@ h1, h2, div, p, li, a, input, textarea {
    -moz-osx-font-smoothing: grayscale;
 }
 
-input, #contact {
+input, button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
