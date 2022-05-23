@@ -20,7 +20,7 @@
   height: calc(var(--vh, 1vh) * 100);
   font-size: 100%;
   background-attachment: scroll;
-  background-image: linear-gradient(130deg, rgb(63 29 153 / .95) 0%, rgb(115 47 202 / .95) 100%), url('../img/blocks.gif?v=2');
+  background-image: linear-gradient(130deg, rgb(70 32 169 / .95) 0%, rgb(115 47 202 / .95) 100%), url('../img/blocks.gif?v=2');
   background-position: 0% 0%, center;
   background-repeat: repeat, repeat;
   background-size: cover, 50rem;
