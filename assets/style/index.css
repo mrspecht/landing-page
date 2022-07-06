@@ -20,7 +20,7 @@
   height: calc(var(--vh, 1vh) * 100);
   font-size: 100%;
   background-attachment: scroll;
-  background-image: linear-gradient(130deg, rgb(70 32 169 / .95) 0%, rgb(115 47 202 / .95) 100%), url('../img/blocks.gif?v=2');
+  background-image: linear-gradient(130deg, rgb(92 45 215 / .95) 0%, rgb(129 59 247 / .95) 100%), url('../img/blocks.gif?v=2');
   background-position: 0% 0%, center;
   background-repeat: repeat, repeat;
   background-size: cover, 50rem;
@@ -241,7 +241,7 @@ li, a, i, img, span, input, #overlay {
 
   #email, #subject, #message, #password  { margin-top: .8rem; }
 
-  .intro, .intro h1 { font-size: 3rem; }
+  .intro, .intro h1 { font-size: 2.9rem; }
   .more { margin-top: 3.2rem; }
   #alert-message::before { content: 'Message sent successfully'; }
 }
