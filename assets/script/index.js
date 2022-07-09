@@ -14,6 +14,8 @@ function sleep(duration) {
   });
 }
 
+setInterval(function () {element.innerHTML += "Hello"}, 1000);
+
 const contact = select('.contact');
 const more = select('.more');
 const intro = select('.intro');
@@ -44,3 +46,7 @@ onEvent(more, 'click', () => {
 // onEvent(contact, 'click', () => {
 //   window.location.assign('https://andrespecht.com/');
 // });
+
+setInterval(
+
+)
