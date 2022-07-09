@@ -41,9 +41,9 @@ header {
 header a {
   margin-top: 1.7rem;
   display: inline-block;
-  padding: 1rem 2.4rem 1rem 2.4rem;
+  padding: 1.1rem 2.4rem 1rem 2.4rem;
   background-color: rgba(255, 255, 255, .15);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
   text-shadow: .01rem .01rem #000;
@@ -114,7 +114,7 @@ section.isvisible {
   width: 16rem;
   height: 4.6rem;
   line-height: 4.7rem;
-  background-color: #1d9bf0;
+  background-color: #2489f1;
   border-radius: 10rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -133,7 +133,7 @@ section.isvisible {
 }
 
 .more:hover {
-  background-color: #1092ea;
+  background-color: #127ff0;
 }
 
 section {
