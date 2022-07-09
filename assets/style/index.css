@@ -19,7 +19,8 @@
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   font-size: 100%;
-  background-image: linear-gradient(rgb(104 50 206 / .99) 0%, rgb(104 50 206 / .99) 100%), url(../img/triangle.gif?v=2);
+  /* background-image: linear-gradient(rgb(104 50 206 / .99) 0%, rgb(104 50 206 / .99) 100%), url(../img/triangle.gif?v=2); */
+  background-image: linear-gradient(150deg, rgb(63 29 153 / .99) 0%, rgb(115 47 202 / .99) 100%), url(../img/triangle.gif?v=2);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
